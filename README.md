@@ -1,324 +1,275 @@
-# LoyaltyBox – Customer Loyalty & Rewards Platform
+Bikaji SmartVerify
 
-**Every Box Has a Reward. Every Purchase Builds Loyalty.**
+Product Authentication & Consumer Engagement Platform
 
-LoyaltyBox is a digital customer loyalty and rewards management platform designed for manufacturing businesses that sell physical products in boxes.
+A proposed digital solution for Bikaji Foods International Ltd.
 
-The platform enables customers to earn loyalty points by purchasing genuine products and redeeming unique codes printed inside product packaging. It also provides factory owners with a centralized dashboard to manage products, generate unique QR codes, monitor customer activity, manage rewards, and detect suspicious redemption attempts.
-
-The primary goal is to help manufacturers build stronger customer relationships, encourage repeat purchases, and create a transparent, secure, and manageable rewards ecosystem.
+«From Product Verification to Customer Engagement.»
 
 ---
 
-## 1. Project Overview
+1. Project Overview
 
-Traditional loyalty programmes often rely on physical coupons, membership cards, or manual reward tracking. These methods can be difficult to manage and vulnerable to duplicate claims and fraudulent activities.
+Bikaji SmartVerify is a proposed web-based product authentication and customer engagement platform designed for the packaged food industry, initially targeting Bikaji's Namkeen product category.
 
-LoyaltyBox aims to solve these problems through a digital, QR-code-based reward system.
+The platform aims to help customers verify their products using unique codes printed inside product packaging while providing a loyalty and rewards system that encourages customer engagement.
 
-Each product box is assigned a unique, securely generated redemption code. Customers can scan the QR code and submit the concealed verification code to prove possession of the product. Once verified, the system credits the corresponding loyalty points to the customer's account.
+Every participating product package will contain a unique, one-time-use code. Customers can enter this code through the SmartVerify website to verify its validity and earn loyalty points.
 
-Customers can accumulate points and exchange them for available rewards.
+The platform will also provide an administrative dashboard through which authorized company staff can manage products, manufacturing batches, unique codes, reward campaigns and customer engagement analytics.
 
-Factory administrators can manage the complete loyalty programme through an administrative dashboard.
+2. Problem Statement
 
-### Key Objectives
+Food manufacturers face several challenges related to product authenticity, customer engagement and consumer data collection.
 
-- Encourage customer loyalty and repeat purchases.
-- Provide a simple and convenient reward-earning experience.
-- Verify genuine product ownership through unique redemption codes.
-- Prevent duplicate code redemption and fraudulent activities.
-- Provide factory owners with centralized reward management.
-- Monitor customer engagement and reward programme performance.
+Some of the major challenges include:
 
----
+- Difficulty identifying repeated usage of product verification codes.
+- Limited direct interaction between manufacturers and end consumers.
+- Lack of a centralized customer loyalty and reward management system.
+- Limited visibility into customer engagement across different products and batches.
+- Challenges in identifying unusual product-code redemption patterns.
 
-## 2. How It Works
+Traditional packaging and retail distribution systems do not necessarily provide manufacturers with a direct digital engagement channel after a customer purchases a product.
 
-The platform follows a simple purchase-to-reward workflow.
+3. Proposed Solution
 
-1. **Product Creation:** The factory administrator registers products and defines their corresponding loyalty points.
+Bikaji SmartVerify proposes a centralized digital platform that combines product-code verification with a customer loyalty programme.
 
-2. **Code Generation:** The administrator generates unique QR codes and redemption tokens for product batches.
+The system will operate through the following process:
 
-3. **Product Packaging:** Generated QR codes are printed and placed inside product packaging with a concealed verification mechanism.
+1. Unique codes are generated for participating products.
+2. Each code is associated with a particular product and manufacturing batch.
+3. Codes are printed inside product packaging or beneath a scratch-off panel.
+4. Customers purchase and open the product.
+5. Customers register or log in to the SmartVerify platform.
+6. Customers enter the unique code available inside the package.
+7. The backend validates the code against the database.
+8. If the code is valid and unused, the system marks it as redeemed.
+9. The customer receives loyalty points according to the configured reward rules.
+10. The system records the transaction and updates administrative analytics.
 
-4. **Customer Purchase:** A customer purchases a product from a retail store.
+The platform will provide appropriate responses for valid, previously redeemed and invalid codes.
 
-5. **QR Scanning:** The customer logs into LoyaltyBox and scans the QR code printed inside the packaging.
+Important: A valid code confirms that the code was issued by the system and has not previously been redeemed. It does not independently guarantee that the physical package is genuine.
 
-6. **Purchase Verification:** The backend validates the submitted token and checks whether it is genuine and has already been redeemed.
+4. Project Objectives
 
-7. **Points Allocation:** If verification succeeds, the system credits the appropriate loyalty points to the customer's wallet.
+The primary objectives of Bikaji SmartVerify are:
 
-8. **Reward Redemption:** Customers can use their accumulated points to claim available rewards.
+- Develop a unique product-code generation and verification mechanism.
+- Prevent multiple successful redemptions of the same code.
+- Provide customers with a simple product verification experience.
+- Introduce a digital loyalty and reward management system.
+- Establish a direct digital engagement channel between the brand and customers.
+- Provide administrative tools for managing products, batches and campaigns.
+- Generate useful analytics from customer verification and redemption activities.
+- Identify suspicious redemption patterns through monitoring.
 
-9. **Factory Monitoring:** Administrators monitor code usage, customer engagement, reward transactions, and suspicious activities.
+5. Target Users
 
----
+The platform will support two primary user categories.
 
-## 3. User Roles
+A. Customers
 
-LoyaltyBox is designed around two primary user roles.
+Customers will be able to:
 
-### Customer
-
-Customers can:
-
-- Register and log in securely.
-- Manage their personal profiles.
-- Scan product QR codes.
-- Verify product redemption codes.
-- Earn loyalty points.
+- Register and log in.
+- Enter unique product verification codes.
+- View verification results.
+- Earn loyalty points through successful code redemption.
 - View their available points balance.
 - Access transaction history.
 - Browse available rewards.
-- Redeem rewards.
-- Track reward redemption history.
+- Redeem eligible rewards and coupons.
 
-### Factory Administrator
+B. Company Administrators
 
-Factory administrators can:
+Authorized company staff will be able to:
 
 - Access the administrative dashboard.
-- Manage customer accounts.
-- Create, update, and manage products.
-- Configure product-wise loyalty points.
-- Manage manufacturing batches.
-- Generate unique QR codes in bulk.
-- Download QR code sheets for printing.
-- Monitor generated and redeemed codes.
-- Manage available rewards and reward inventory.
-- View customer point transactions.
-- Monitor suspicious redemption activities.
-- Analyse customer engagement and reward programme performance.
+- Manage products and product categories.
+- Create and manage manufacturing batches.
+- Generate unique codes in bulk.
+- Configure loyalty points and reward campaigns.
+- Monitor product-code redemption activities.
+- Identify invalid and repeated code attempts.
+- View customer engagement statistics.
+- Monitor reward claims and transactions.
 
----
+6. Core Features
 
-## 4. Core Features
+Feature| Description
+User Authentication| Secure customer and administrator accounts
+Unique Code Generation| Generate secure, unpredictable package codes
+Product Management| Manage participating Namkeen products
+Batch Management| Associate products with manufacturing batches
+Product Verification| Validate codes against the database
+Duplicate Detection| Prevent multiple redemptions of the same code
+Loyalty Wallet| Maintain customer loyalty point balances
+Points Management| Record earned and spent points
+Rewards Management| Configure and manage customer rewards
+Admin Dashboard| Centralized administrative management
+Analytics| Monitor verification and redemption activities
+Audit Logging| Maintain records of important system operations
 
-### 4.1 Authentication and User Management
+7. Technology Stack
 
-Secure registration and authentication with role-based access control.
+The project will use the following technologies:
 
-### 4.2 Product Management
+Layer| Technology
+Frontend| React.js
+Programming Language| JavaScript
+Backend| Python
+Backend Framework| Django
+API Development| Django REST Framework
+Database| PostgreSQL
+Authentication| JWT
+Code Generation| Python Secure Random Generator
+API Testing| Postman
+Version Control| Git and GitHub
+Deployment| Cloud Hosting (planned)
 
-Administrators can create and manage products, product categories, product information, and loyalty point values.
+Application Architecture
 
-### 4.3 Unique QR Code Generation
+The application will follow a client-server architecture.
 
-The platform generates cryptographically secure, unique redemption tokens associated with individual product packages.
+- React.js will handle the customer and administrative interfaces.
+- Django REST Framework will provide RESTful APIs.
+- PostgreSQL will store application data.
+- Django will handle authentication, verification, redemption and reward calculations.
 
-Administrators can generate codes in batches and download printable QR code sheets.
+All critical business logic will be processed and validated on the backend.
 
-### 4.4 Purchase Verification
+8. Database Design
 
-Customers prove possession of a genuine product package by scanning its QR code and submitting the concealed redemption token.
+The initial database design will include the following entities:
 
-The backend verifies:
+Entity| Responsibility
+User| Customer and administrative accounts
+Product| Participating product information
+ProductBatch| Manufacturing batch information
+UniqueCode| Generated package verification codes
+Redemption| Customer code-redemption records
+Wallet| Customer loyalty balance
+PointTransaction| Loyalty points earned and spent
+Reward| Available rewards and coupons
+RewardRedemption| Customer reward redemption records
+AuditLog| Important administrative and security activities
 
-- Whether the token exists.
-- Whether the token is associated with an active product.
-- Whether the token is valid.
-- Whether the token has already been redeemed.
-- Whether the customer is eligible to redeem it.
+Important Database Constraints
 
-### 4.5 Fraud Prevention
+- Every generated code must be unique.
+- A unique code can have only one successful redemption.
+- Every successful redemption must have a corresponding points transaction.
+- Loyalty transactions must maintain an accurate wallet balance.
+- Reward redemption must not allow insufficient-balance transactions.
+- Critical operations must use database transactions to maintain data consistency.
 
-LoyaltyBox incorporates security mechanisms to reduce fraudulent redemption attempts.
+9. Security Considerations
+
+Security will be an important part of the application.
 
 Planned security measures include:
 
-- Cryptographically secure random token generation.
-- One-time code redemption.
-- Hashed token storage.
-- Atomic database transactions.
-- Database-level uniqueness constraints.
-- Rate limiting against repeated invalid attempts.
-- Protection against simultaneous duplicate redemption.
-- Suspicious activity monitoring.
-
-### 4.6 Customer Wallet and Loyalty Points
-
-Every customer has a digital wallet that maintains their loyalty points balance.
-
-All point credits and deductions are recorded in a transaction ledger to maintain transparency and enable auditing.
-
-### 4.7 Rewards Management
-
-Administrators can create rewards, configure point requirements, manage availability, and maintain reward inventory.
-
-Customers can browse and redeem rewards using their accumulated points.
-
-### 4.8 Analytics and Monitoring
-
-The administrative dashboard provides insights into:
-
-- Total registered customers.
-- Total generated QR codes.
-- Total redeemed codes.
-- Active customers.
-- Points distributed.
-- Points redeemed.
-- Reward redemption activity.
-- Popular products.
-- Suspicious activities.
-
----
-
-## 5. Technology Stack
-
-The project will use a full-stack architecture with Django REST Framework as the backend API.
-
-| Layer | Technology |
-|---|---|
-| Frontend | React.js |
-| UI Styling | Tailwind CSS |
-| Backend | Python, Django |
-| REST API | Django REST Framework |
-| Database | PostgreSQL |
-| Authentication | JWT |
-| QR Code Generation | Python `qrcode` |
-| QR Code Scanning | `html5-qrcode` |
-| API Testing | Postman |
-| Automated Testing | Django TestCase / pytest |
-| Data Visualization | Recharts |
-| Version Control | Git and GitHub |
-| Deployment | Vercel + Render or equivalent hosting |
-
-### Why Django REST Framework?
-
-Django REST Framework is selected because the application requires structured database management, authentication, role-based permissions, transactional operations, and multiple interconnected business modules.
-
-Django provides:
-
-- A powerful ORM for managing relational data.
-- Built-in authentication and permission mechanisms.
-- Database transaction support.
-- Django Admin for administrative operations.
-- A mature ecosystem of security and development tools.
-
-DRF provides a structured approach to developing REST APIs that can communicate with the React frontend.
-
-This combination allows the project to maintain a clean separation between frontend presentation and backend business logic.
-
----
-
-## 6. System Architecture
-
-LoyaltyBox follows a client-server architecture.
-
-```text
-             CUSTOMER / ADMIN
-                    |
-                    v
-             REACT FRONTEND
-                    |
-              REST API / HTTPS
-                    |
-                    v
-          DJANGO REST FRAMEWORK
-                    |
-          -----------------------
-          |          |          |
-          v          v          v
-      Accounts    Products    Rewards
-          |          |          |
-          v          v          v
-       Customer   QR Codes   Redemption
-        Wallet    Verification  Engine
-          |          |          |
-          -----------|----------
-                     |
-                     v
-                POSTGRESQL
-                     |
-                     v
-            ANALYTICS & REPORTS
-```
-
-The React frontend communicates with the Django REST Framework backend through REST APIs.
-
-Django handles authentication, business logic, QR code validation, reward calculations, and transaction management.
-
-PostgreSQL stores customer information, products, generated codes, wallets, point transactions, and reward redemption records.
-
----
-
-## 7. Database Design
-
-The initial database design includes the following entities:
-
-| Entity | Description |
-|---|---|
-| User | Stores customer and administrator accounts. |
-| Product | Stores factory product information. |
-| ProductBatch | Stores manufacturing batch details. |
-| RewardCode | Stores unique product redemption code records. |
-| Wallet | Maintains customer loyalty point balances. |
-| PointTransaction | Records all loyalty point credits and deductions. |
-| Reward | Stores available rewards and their point requirements. |
-| RewardRedemption | Records customer reward redemption requests. |
-
-The database structure will be refined during implementation to maintain data integrity, secure transactions, and scalability.
-
----
-
-## 8. Security Considerations
-
-Security is a fundamental part of LoyaltyBox because the platform directly manages reward credits and customer benefits.
-
-The following measures will be considered during implementation:
-
 - Secure password hashing.
 - JWT-based authentication.
-- Role-based API permissions.
-- HTTPS for communication.
-- Secure random redemption token generation.
-- Hashed storage of redemption tokens.
-- Atomic code redemption and wallet updates.
-- Rate limiting.
-- Input validation.
-- Protection against duplicate redemption.
-- Administrative activity monitoring.
-- Environment-based configuration for sensitive credentials.
+- Role-based access control.
+- Cryptographically secure unique-code generation.
+- Database-level uniqueness constraints.
+- Atomic code redemption and points transactions.
+- API request validation.
+- Rate limiting for code verification attempts.
+- Audit logging for important operations.
+- Protection of sensitive environment variables.
 
-A successful redemption must update the redemption status and customer points within a single database transaction.
+The system will also monitor repeated invalid attempts and unusual redemption activity.
 
-This ensures that a single product code cannot generate multiple reward credits through concurrent requests.
+10. Development Roadmap
 
----
+The project will be developed in seven phases.
 
-## 9. Project Structure
+Phase| Development Activity
+Phase 1| Business analysis and requirements gathering
+Phase 2| System architecture and database design
+Phase 3| Backend and API development
+Phase 4| React frontend development
+Phase 5| Frontend and backend integration
+Phase 6| Testing, security validation and deployment
+Phase 7| Documentation and final presentation
 
-The planned repository structure is:
+Estimated Timeline
 
-```text
-LoyaltyBox/
+The initial MVP is planned over approximately six weeks.
+
+- Week 1: Requirements and planning.
+- Week 2: Architecture and database design.
+- Week 3: Backend development.
+- Week 4: Frontend development.
+- Week 5: Integration and testing.
+- Week 6: Deployment and documentation.
+
+The timeline may change depending on development progress and testing results.
+
+11. Minimum Viable Product (MVP)
+
+The first version will focus on the essential functionality required to demonstrate the business concept.
+
+Included in MVP:
+
+- Customer registration and authentication.
+- Product and batch management.
+- Bulk unique-code generation.
+- Product-code verification.
+- Duplicate-code detection.
+- Loyalty wallet and point transactions.
+- Basic reward management.
+- Customer dashboard.
+- Administrative dashboard.
+- Basic redemption analytics.
+
+Future Enhancements
+
+The following features may be considered after completing the MVP:
+
+- Advanced fraud detection.
+- Predictive customer analytics.
+- Geographic redemption analysis.
+- Native Android and iOS applications.
+- Integration with actual manufacturing and ERP systems.
+- Automated marketing campaigns.
+- Advanced loyalty programme personalization.
+
+12. Repository Structure
+
+The proposed repository structure is:
+
+Bikaji-SmartVerify/
 │
 ├── backend/
 │   ├── config/
 │   ├── accounts/
 │   ├── products/
-│   ├── codes/
-│   ├── wallet/
+│   ├── batches/
+│   ├── verification/
+│   ├── loyalty/
 │   ├── rewards/
-│   ├── analytics/
-│   ├── requirements.txt
 │   └── manage.py
 │
 ├── frontend/
-│   ├── public/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
-│   │   ├── layouts/
 │   │   ├── services/
-│   │   ├── hooks/
-│   │   └── assets/
+│   │   ├── customer/
+│   │   └── admin/
 │   └── package.json
 │
 ├── docs/
+│   ├── diagrams/
+│   └── API_DOCUMENTATION.md
+│
+├── tests/
 │
 ├── README.md
 ├── ASSUMPTIONS.md
@@ -326,210 +277,86 @@ LoyaltyBox/
 ├── AI_LOG.md
 ├── .env.example
 └── .gitignore
-```
 
-The structure may evolve as additional modules are implemented.
+13. Project Documentation
 
----
+The repository will maintain separate documentation for the development process.
 
-## 10. Installation and Setup
+Document| Purpose
+README.md| Project overview and setup instructions
+ASSUMPTIONS.md| Business assumptions and limitations
+ARCHITECTURE.md| System architecture and technical decisions
+AI_LOG.md| AI interactions, identified mistakes and corrections
+API_DOCUMENTATION.md| API endpoints and usage
+Test Documentation| Test cases and execution results
 
-### Prerequisites
+14. Project Assumptions and Limitations
 
-Install the following before setting up the project:
+This project is an academic and technical proposal. It is not an officially approved or deployed Bikaji product.
 
-- Python 3.11 or later.
-- Node.js and npm.
-- PostgreSQL.
-- Git.
+The initial implementation will operate using simulated product, batch and manufacturing information.
 
-### Step 1: Clone the Repository
+The following assumptions will apply:
 
-```bash
-git clone https://github.com/YOUR_USERNAME/LoyaltyBox.git
+- Only selected Bikaji Namkeen products will be included initially.
+- Unique codes will be generated by the proposed application.
+- Codes will be printed inside eligible product packages.
+- Customers must register before redeeming codes.
+- A code can be successfully redeemed only once.
+- Loyalty points and reward rules will be configurable by authorized administrators.
+- Manufacturing information will be entered manually or imported for demonstration purposes.
 
-cd LoyaltyBox
-```
+A code copied from genuine packaging could potentially be reproduced on counterfeit packaging. Therefore, code verification alone cannot guarantee physical product authenticity. Additional supply-chain and packaging security mechanisms would be required for a production deployment.
 
-### Step 2: Backend Setup
+15. Expected Outcomes
 
-Navigate to the backend directory.
+Upon completion, Bikaji SmartVerify is expected to demonstrate:
 
-```bash
-cd backend
-```
-
-Create and activate a virtual environment.
-
-**Windows:**
-
-```bash
-python -m venv venv
-
-venv\Scripts\activate
-```
-
-**Linux / macOS:**
-
-```bash
-python3 -m venv venv
-
-source venv/bin/activate
-```
-
-Install dependencies.
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 3: Environment Configuration
-
-Create a `.env` file inside the backend directory using `.env.example` as a reference.
-
-Configure the required database and application settings.
-
-Example:
-
-```env
-DEBUG=True
-SECRET_KEY=your-development-secret-key
-ALLOWED_HOSTS=localhost,127.0.0.1
-
-DB_NAME=loyaltybox_db
-DB_USER=postgres
-DB_PASSWORD=your-local-password
-DB_HOST=localhost
-DB_PORT=5432
-```
-
-Never commit actual passwords, secret keys, or production credentials.
-
-### Step 4: Database Setup
-
-Create a PostgreSQL database named `loyaltybox_db`.
-
-Then run:
-
-```bash
-python manage.py makemigrations
-
-python manage.py migrate
-```
-
-### Step 5: Create Administrator Account
-
-```bash
-python manage.py createsuperuser
-```
-
-Follow the instructions to create an administrator account.
-
-### Step 6: Start the Backend Server
-
-```bash
-python manage.py runserver
-```
-
-Backend development server:
-
-```text
-http://127.0.0.1:8000/
-```
-
-### Step 7: Frontend Setup
-
-Open another terminal and navigate to the frontend directory.
-
-```bash
-cd frontend
-
-npm install
-
-npm run dev
-```
-
-The React development server will provide its local URL, typically:
-
-```text
-http://localhost:5173/
-```
-
----
-
-## 11. Testing
-
-Testing is important to ensure that loyalty points are credited correctly and product codes cannot be reused.
-
-The project will include automated tests and manual verification for the following scenarios:
-
-| Test Scenario | Expected Result |
-|---|---|
-| Valid QR code redemption | Points credited successfully |
-| Duplicate code redemption | Redemption rejected |
-| Invalid redemption token | Validation error displayed |
-| Simultaneous redemption attempts | Only one request succeeds |
-| Insufficient loyalty points | Reward redemption rejected |
-| Unavailable reward | Redemption rejected |
-| Unauthorized admin access | Access denied |
-| Wallet balance verification | Balance matches transaction ledger |
-| Repeated invalid attempts | Rate limit enforced |
-
-Test results and any identified issues will be documented in the repository.
-
----
-
-## 12. Project Documentation
-
-The repository will maintain the following documentation:
-
-| File | Purpose |
-|---|---|
-| README.md | Project overview, technology stack, setup, and usage instructions. |
-| ASSUMPTIONS.md | Documents all assumptions made due to incomplete client requirements. |
-| ARCHITECTURE.md | Explains technology decisions, system architecture, database design, and workflows. |
-| AI_LOG.md | Documents important AI prompts, interactions, mistakes, and corrections. |
-| .env.example | Provides placeholder environment configuration without exposing secrets. |
-
----
-
-## 13. Future Enhancements
-
-The following features may be considered after completing the initial version:
-
-- Advanced fraud detection and anomaly analysis.
+- A working product-code verification system.
+- A mechanism to prevent duplicate code redemption.
+- A digital customer loyalty programme.
+- A centralized administrative dashboard.
+- Product and batch-level redemption monitoring.
 - Customer engagement analytics.
-- Product-wise and region-wise loyalty reports.
-- Multiple factory and brand support.
-- Automated reward notifications.
-- Referral-based loyalty programmes.
-- Expiring loyalty points.
-- Multilingual customer interface.
-- Integration with external e-commerce platforms.
-- Progressive Web App installation support.
+- A scalable foundation for future enhancements.
 
-These enhancements are outside the initial MVP unless explicitly included in the final project scope.
+The project aims to demonstrate how software engineering can solve practical business problems by combining product verification, database management, customer engagement and analytics.
 
 ---
 
-## 14. Project Status
+16. Project Status
 
-**Development Status:** Planning / Initial Development
+Current Stage: Planning and Requirement Analysis
 
-The project will be developed incrementally, with a focus on secure product verification, reliable loyalty point management, and an intuitive customer experience.
-
-Features will be marked as completed only after implementation and testing.
-
----
-
-## 15. Author
-
-**Project:** LoyaltyBox – Customer Loyalty & Rewards Platform
-
-**Repository:** [GitHub Repository](https://github.com/YOUR_USERNAME/LoyaltyBox)
-
-**Developer:** Vyankatesh Gupta
+Component| Status
+Business concept| Finalized
+Primary objectives| Finalized
+Initial product category| Finalized
+Technology stack| Proposed
+Database architecture| Pending detailed design
+Backend development| Not started
+Frontend development| Not started
+Integration and testing| Not started
+Deployment| Not started
 
 ---
 
-*LoyaltyBox – Turning Every Genuine Purchase into a Rewarding Experience.*
+17. Disclaimer
+
+Bikaji SmartVerify is an independent academic project developed for educational and demonstration purposes.
+
+Bikaji Foods International Ltd. is used as the proposed client and business context. This project is not affiliated with, endorsed by or officially associated with Bikaji Foods International Ltd.
+
+All product names and brand references belong to their respective owners.
+
+---
+
+Project Name: Bikaji SmartVerify
+Project Type: Full-Stack Web Application
+Proposed Client: Bikaji Foods International Ltd.
+Initial Product Category: Namkeen
+Frontend: React.js
+Backend: Django REST Framework
+Database: PostgreSQL
+
+Building a smarter connection between products, brands and customers.
